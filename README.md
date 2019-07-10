@@ -2,33 +2,45 @@
 
 
 
-A simple Angular PWA for query books from http://openlibrary.org API and okta hosted login authentication.
-
+A simple Angular PWA book search app using  [openlibrary](http://openlibrary.org) API.
+It uses [okta](https://www.okta.com) hosted login authentication.
+Create a free developer edition account in case you don't have any account.Get started from [here](https://developer.okta.com) and refer documentation 
 
  <i>get started</i>
 
 > 1. clone the repo :
 
-`git clone https://github.com/charlie39/BooksPWA.git`
+>     `git clone https://github.com/charlie39/BooksPWA.git`
 
 > 2. replace the placeholders from <u>src/app/app.module.ts</u> enter your okta domain and client ID.
 
 > 3. install the dependencies:
 
-`npm install`
+>     `npm install`
 
 > 4. build the project
 
-`ng build --prod`
+>     `ng build --prod`
 
 > 5. start the http-server-pwa server
 
-`http-sever-pwa dist/BooksPWA/ index.html 8080`
+>     `http-sever-pwa dist/BooksPWA/ index.html 8080`
 
 > 6 . Open your browser and go to <u>localhost:8080</u>. Wait for the authentication and then search any books from the search bar. 
 
 
 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+# Bolier Plate alert !!
 
 
 -------------------------------------------------------------------------------
