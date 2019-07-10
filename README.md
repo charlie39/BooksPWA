@@ -4,9 +4,18 @@
 
 A simple Angular PWA book search app using  [openlibrary](http://openlibrary.org) API.
 It uses [okta](https://www.okta.com) hosted login authentication.
-Create a free developer edition account in case you don't have any account.Get started from [here](https://developer.okta.com) and refer documentation 
+Create a free developer edition account in case you don't have any account.Get started from [here](https://developer.okta.com) and refer their documentation. 
 
- <i>get started</i>
+
+
+
+<i>get started</i>
+
+
+
+
+
+
 
 > 1. clone the repo :
 
@@ -40,10 +49,17 @@ Create a free developer edition account in case you don't have any account.Get s
 
 
 
-# Bolier Plate alert !!
+# Boiler Plate alert !!
 
 
--------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
 ## Development server
