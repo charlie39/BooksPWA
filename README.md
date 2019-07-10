@@ -2,7 +2,7 @@
 
 
 
-A simple Angular PWA for query books from http://openlibrary.org and okta hosted login authentication.
+A simple Angular PWA for query books from http://openlibrary.org API and okta hosted login authentication.
 
 
 
