@@ -5,23 +5,27 @@
 A simple Angular PWA for query books from http://openlibrary.org API and okta hosted login authentication.
 
 
-#get started
+ <i>get started</i>
 
-> clone the repo : git clone https://github.com/charlie39/BooksPWA.git
+> 1. clone the repo :
 
-> edit enter your okta domain and client ID
+`git clone https://github.com/charlie39/BooksPWA.git`
 
-> install dependencies:
+> 2. replace the placeholders from <u>src/app/app.module.ts</u> enter your okta domain and client ID.
+
+> 3. install the dependencies:
 
 `npm install`
 
->build the project
+> 4. build the project
 
 `ng build --prod`
 
-> start the http-server-pwa server
+> 5. start the http-server-pwa server
 
 `http-sever-pwa dist/BooksPWA/ index.html 8080`
+
+> 6 . Open your browser and go to <u>localhost:8080</u>. Wait for the authentication and then search any books from the search bar. 
 
 
 
