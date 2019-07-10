@@ -41,9 +41,9 @@ import { CachingInterceptor } from './cache/caching-interceptor.service';
     MatTableModule,
     MatProgressSpinnerModule,
     OktaAuthModule.initAuth({
-    	issuer:'https://dev-510944.okta.com/oauth2/default',
+    issuer:'https://{yourOcktaDomain/oauth2/default',
 	redirectUri:'http://localhost:8080/implicit/callback',
-	clientId: '0oavhfqjhmwamjMXf356'
+	clientId: '{yourClientId'
 	}),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
