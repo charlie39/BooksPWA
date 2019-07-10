@@ -1,0 +1,347 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20190710.051012.30660.0.001.json",
+    "dumpEventTime": "2019-07-10T05:10:12Z",
+    "dumpEventTimeStamp": "1562715612882",
+    "processId": 30660,
+    "cwd": "/home/charlie/project/angular/v8/BooksPWA/src",
+    "commandLine": [
+      "node",
+      "/home/charlie/.nvm/versions/node/v12.6.0/bin/ng",
+      "build",
+      "--prod",
+      "--source-map"
+    ],
+    "nodejsVersion": "v12.6.0",
+    "glibcVersionRuntime": "2.29",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.6.0",
+      "v8": "7.5.288.22-node.14",
+      "uv": "1.30.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.6.0/node-v12.6.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.6.0/node-v12.6.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.1.16-arch1-1-ARCH",
+    "osVersion": "#1 SMP PREEMPT Wed Jul 3 20:23:07 UTC 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "AMD C-60 APU with Radeon(tm) HD Graphics",
+        "speed": 800,
+        "user": 74530200,
+        "nice": 57100,
+        "sys": 12152200,
+        "idle": 403979300,
+        "irq": 2613500
+      },
+      {
+        "model": "AMD C-60 APU with Radeon(tm) HD Graphics",
+        "speed": 800,
+        "user": 74530200,
+        "nice": 57100,
+        "sys": 12152200,
+        "idle": 403979300,
+        "irq": 2613500
+      }
+    ],
+    "host": "arch"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000ace095",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x00000000009afff3",
+      "symbol": "node::OnFatalError(char const*, char const*) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000b078ce",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000b07c49",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000ce4ae5",
+      "symbol": " [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000cf032b",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000cf1047",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000cf3b78",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000cbe138",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray(int, v8::internal::AllocationType) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000c69611",
+      "symbol": " [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000c69e52",
+      "symbol": " [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x0000000000f6ad9e",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [ng build --prod --source-map]"
+    },
+    {
+      "pc": "0x00000000013162b9",
+      "symbol": " [ng build --prod --source-map]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 842141696,
+    "totalCommittedMemory": 837499248,
+    "usedMemory": 785858400,
+    "availableMemory": 23679232,
+    "memoryLimit": 859832320,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32272,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 199768,
+        "capacity": 2094656,
+        "used": 0,
+        "available": 2094656
+      },
+      "old_space": {
+        "memorySize": 705835008,
+        "committedMemory": 705608000,
+        "capacity": 678511960,
+        "used": 676942536,
+        "available": 1569424
+      },
+      "code_space": {
+        "memorySize": 5406720,
+        "committedMemory": 5222912,
+        "capacity": 4624128,
+        "used": 4624128,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 26218496,
+        "committedMemory": 26211272,
+        "capacity": 4505360,
+        "used": 4505360,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 99602432,
+        "committedMemory": 99602432,
+        "capacity": 99203760,
+        "used": 99203760,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550656,
+        "used": 550656,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094656,
+        "used": 0,
+        "available": 2094656
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1421.59,
+    "kernelCpuSeconds": 37.4179,
+    "cpuConsumptionPercent": 131.442,
+    "maxRss": 1358639104,
+    "pageFaults": {
+      "IORequired": 166,
+      "IONotRequired": 1681200
+    },
+    "fsActivity": {
+      "reads": 169896,
+      "writes": 25616
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 830.328,
+    "kernelCpuSeconds": 19.8951,
+    "cpuConsumptionPercent": 76.5966,
+    "fsActivity": {
+      "reads": 167128,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/bin/bash",
+    "WINDOWID": "23068678",
+    "LESS": "-R",
+    "JBOSS_CONFIG": "standalone.xml",
+    "READER": "zathura",
+    "NOTMUCH_CONFIG": "/home/charlie/.config/notmuch-config",
+    "LESS_TERMCAP_se": "\u001b[0m",
+    "LESS_TERMCAP_so": "\u001b[01;44;33m",
+    "GRADLE_HOME": "/usr/share/java/gradle",
+    "SDKMAN_CANDIDATES_DIR": "/home/charlie/.sdkman/candidates",
+    "EDITOR": "nvim",
+    "XDG_SEAT": "seat0",
+    "PWD": "/home/charlie/project/angular/v8/BooksPWA/src",
+    "LOGNAME": "charlie",
+    "XDG_SESSION_TYPE": "tty",
+    "JBOSS_USER": "wildfly",
+    "XAUTHORITY": "/home/charlie/.Xauthority",
+    "TERMINAL": "st",
+    "WINDOWPATH": "1",
+    "GTK2_RC_FILES": "/home/charlie/.config/gtk-2.0/gtkrc-2.0",
+    "HOME": "/home/charlie",
+    "JBOSS_CONSOLE_LOG": "/var/log/wildfly/console.log",
+    "LANG": "en_US.UTF-8",
+    "JBOSS_HOME": "/opt/wildfly",
+    "SDKMAN_VERSION": "5.7.3+337",
+    "JBOSS_HOST_CONFIG": "host-master.xml",
+    "INVOCATION_ID": "6a5f28297a384434b1ee0204d73f2ae6",
+    "JBOSS_MODE": "standalone",
+    "GROOVY_HOME": "/home/charlie/.sdkman/candidates/groovy/current",
+    "NVM_DIR": "/home/charlie/.nvm",
+    "XDG_SESSION_CLASS": "user",
+    "TERM": "st-256color",
+    "LESS_TERMCAP_mb": "\u001b[1;31m",
+    "LESS_TERMCAP_me": "\u001b[0m",
+    "LESS_TERMCAP_md": "\u001b[1;36m",
+    "USER": "charlie",
+    "SUDO_ASKPASS": "/home/charlie/.scripts/tools/dmenupass",
+    "SDKMAN_DIR": "/home/charlie/.sdkman",
+    "DISPLAY": ":0",
+    "LESS_TERMCAP_ue": "\u001b[0m",
+    "SHLVL": "2",
+    "NVM_CD_FLAGS": "",
+    "LESS_TERMCAP_us": "\u001b[1;32m",
+    "JBOSS_PIDFILE": "/run/wildfly/wildfly.pid",
+    "XDG_VTNR": "1",
+    "SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+    "XDG_SESSION_ID": "1",
+    "TOMCAT9": "/home/charlie/.config/tomcat/tomcat9",
+    "TOMCAT8": "/home/charlie/.config/tomcat/tomcat8",
+    "REFER": "/home/charlie/Documents/referbib",
+    "MOZ_PLUGIN_PATH": "/usr/lib/mozilla/plugins",
+    "BIB": "/home/charlie/Documents/LaTeX/uni.bib",
+    "fx11": "/usr/lib/jvm/fx/javafx-sdk-11.0.2/lib",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "PS1": "\\[\u001b[1m\\]\\[\u001b[31m\\][\\[\u001b[33m\\]\\u\\[\u001b[32m\\]@\\[\u001b[34m\\]\\h \\[\u001b[35m\\]\\W\\[\u001b[31m\\]]\\[\u001b[37m\\]\\$ \\[\u001b[0m\\]",
+    "JOURNAL_STREAM": "9:21204",
+    "BROWSER": "firefox",
+    "PATH": "/home/charlie/.sdkman/candidates/groovy/current/bin:/home/charlie/.nvm/versions/node/v12.6.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/charlie/.scripts/tools:/home/charlie/.scripts/cron:/home/charlie/.scripts/i3cmds:/home/charlie/.scripts/statusbar:/home/charlie/.scripts/",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "SDKMAN_PLATFORM": "Linux64",
+    "HG": "/usr/bin/hg",
+    "NVM_BIN": "/home/charlie/.nvm/versions/node/v12.6.0/bin",
+    "MAIL": "/var/spool/mail/charlie",
+    "FILE": "vu",
+    "OLDPWD": "/home/charlie/project/angular/v8/BooksPWA/src/assets/icons",
+    "JBOSS_DOMAIN_CONFIG": "domain.xml",
+    "_": "/home/charlie/.nvm/versions/node/v12.6.0/bin/ng",
+    "WEBPACK_DEV_SERVER": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 524288,
+      "hard": 524288
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 6320,
+      "hard": 6320
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/usr/lib/libdl.so.2",
+    "/usr/lib/librt.so.1",
+    "/usr/lib/libstdc++.so.6",
+    "/usr/lib/libm.so.6",
+    "/usr/lib/libgcc_s.so.1",
+    "/usr/lib/libpthread.so.0",
+    "/usr/lib/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
