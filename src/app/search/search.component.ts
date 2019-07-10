@@ -16,7 +16,7 @@ export class SearchComponent implements OnInit {
 	displayColumns: string[] = ['title', 'author', 'publication', 'details' ];
 	books = new MatTableDataSource<any>();
 
-  	constructor(private route: ActivatedRoute, private router: Router, private booksService: BooksService) { }
+  	constructor(private route: ActivatedRoute, private router: Router, private bookService: BooksService) { }
 
 	  ngOnInit() {
 	  	this.subscription = this.route.queryParams.subscribe(params => {
@@ -28,7 +28,7 @@ export class SearchComponent implements OnInit {
 	}
 
 	async searchBooks(query: string) {
-		const results = await this.booksService.searchBooks(query);
+		const results = await this.bookService.searchBooks(query);
 		this.books.data = results.docs;
 	}
 
