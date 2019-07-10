@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CachingInterceptorService } from './caching-interceptor.service';
+import { CachingInterceptor } from './caching-interceptor.service';
 
-describe('CachingInterceptorService', () => {
+describe('CachingInterceptor', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: CachingInterceptorService = TestBed.get(CachingInterceptorService);
+    const service: CachingInterceptor = TestBed.get(CachingInterceptor);
     expect(service).toBeTruthy();
   });
 });
